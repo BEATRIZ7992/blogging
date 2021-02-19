@@ -1,0 +1,23 @@
+<!-- <select (change)="onChange($event)"> -->
+<!-- <option value="">Ver Todos</option>
+<option value=""></option> -->
+
+</select>
+
+<div class="container">
+    <div class="blog" *ngFor="let pos of ponerPost">
+
+        <h2>{{pos.titulo}}</h2>
+        <p>{{pos.texto}}</p>
+        <p>{{pos.autor}}</p>
+
+        <img [src]="pos.imagen" alt="">
+        <p>{{pos.categoria}}</p>
+
+        <button [routerLink]="['/blog']"></button>
+
+    </div>
+</div>
+
+
+<!-- como importo desde la db??¿?¿?¿?¿ -->

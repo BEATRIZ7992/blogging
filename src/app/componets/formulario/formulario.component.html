@@ -1,0 +1,30 @@
+<form class="form" [formGroup]="formulario" (ngSubmit)="onSUbmit()">
+
+    <h2>NEW POST</h2>
+    <div class="form-group">
+        <p type="Name:"><input formControlName="titulo"></p>
+    </div>
+    <div class="form-group">
+        <p type="Text"><input formControlName="texto"></p>
+    </div>
+    <div class="form-group">
+        <p type="Author"><input formControlName="autor"></p>
+    </div>
+    <div class="form-group">
+        <img src="" alt="">Picture<input formControlName="imagen">
+    </div>
+    <!--   <div class="form-group" formControlName="categoria">
+        <select name="" id="">
+            <option value="comidaarabe">Arabian Food</option>
+            <option value="comidaindia">Indian Food</option>
+            <option value="comidamediterranea">Mediterranean Food</option>
+            <option value="comidaasiatica">Asian Food</option>
+            <option value="panyderivados">Bread and derivates</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div> -->
+
+
+    <button>Send Message</button>
+
+</form>

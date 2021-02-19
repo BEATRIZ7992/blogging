@@ -1,16 +1,28 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlogComponent } from './components/blog/blog.component';
+
+import { FormularioComponent } from './componets/formulario/formulario.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlogComponent,
+
+    FormularioComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+.container{
+    margin-top: 30px;
+    display: grid;
+    
+}
+.blog img{
+    height: 200px;
+    width: 300px;
+    
+    
+}
