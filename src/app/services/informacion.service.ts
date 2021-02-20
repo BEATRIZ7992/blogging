@@ -27,7 +27,8 @@ export class InformacionService {
   addNewwPost(nuevoPost: Post) {
     return new Promise((resolve, reject) => {
       this.arraPost.push(nuevoPost);
-      resolve(this.arraPost)
+      resolve(this.arraPost);
+      localStorage.setItem('arr_Post', JSON.stringify(this.arraPost))
     })
 
   }
@@ -39,14 +40,33 @@ export class InformacionService {
   }
 
 
+
   getPostByCategory(pCategoria: string): Promise<Post[]> {
-    return new Promise((resolve, reject) => {
-      const arrFiltrado = POST.filter((Pos) => {
-        return Pos.categoria === pCategoria;
-      });
-      resolve(arrFiltrado)
+    return new Promise<Post[]>((resolve, reject) => {
+      const arraFiltrado = [];
+
+      for (let pos of this.arraPost) {
+        if (pos.categoria === pCategoria) {
+          arraFiltrado.push(pos)
+        }
+      }
+      resolve(arraFiltrado)
     })
   }
+
+  getCategory(): string[] {
+    const nuevoArr = this.arraPost.map(arrCategory => arrCategory.categoria);
+    return [...new Set(nuevoArr)]
+  }
+  /*  getPostByCategory(pCategoria: Post) {
+     return new Promise((resolve, reject) => {
+       this.arraPost.filter(pCategoria);
+       resolve(this.arraPost)
+ 
+ 
+ 
+     })
+   } */
 
 }
 

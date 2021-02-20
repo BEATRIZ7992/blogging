@@ -2,18 +2,18 @@
 
     <h2>NEW POST</h2>
     <div class="form-group">
-        <p type="Name:"><input formControlName="titulo"></p>
+        <p type="Name:">Title<input formControlName="titulo"></p>
     </div>
     <div class="form-group">
-        <p type="Text"><input formControlName="texto"></p>
+        <p type="Text">Texto<input formControlName="texto"></p>
     </div>
     <div class="form-group">
-        <p type="Author"><input formControlName="autor"></p>
+        <p type="Author">Author<input formControlName="autor"></p>
     </div>
     <div class="form-group">
         <img src="" alt="">Picture<input formControlName="imagen">
     </div>
-    <!--   <div class="form-group" formControlName="categoria">
+    <div class="form-select" formControlName="categoria">
         <select name="" id="">
             <option value="comidaarabe">Arabian Food</option>
             <option value="comidaindia">Indian Food</option>
@@ -22,9 +22,9 @@
             <option value="panyderivados">Bread and derivates</option>
             <option value="otros">Otros</option>
         </select>
-    </div> -->
+    </div>
 
 
-    <button>Send Message</button>
+    <button class="btn btn-block btn-info" [disabled]="!formulario.valid">Submit</button>
 
 </form>

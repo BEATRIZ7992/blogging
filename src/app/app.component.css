@@ -2,5 +2,13 @@
     width: auto;
     border: solid grey 0.5px;
     color: black;
+    text-decoration-color: none;
     
+}
+
+h1{
+    margin-left: 36%;
+    margin-top: 5%;
+    font-size: 50px;
+    color: grey;
 }

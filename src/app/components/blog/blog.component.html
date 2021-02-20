@@ -1,6 +1,6 @@
-<!-- <select (change)="onChange($event)"> -->
-<!-- <option value="">Ver Todos</option>
-<option value=""></option> -->
+<select (change)="onChange($event)">
+    <option value="">Ver Todos</option>
+    <option value="categoria" *ngFor="let categoria of ponerPost">{{categoria}}</option>
 
 </select>
 
@@ -14,7 +14,7 @@
         <img [src]="pos.imagen" alt="">
         <p>{{pos.categoria}}</p>
 
-        <button [routerLink]="['/blog']"></button>
+        <hr>
 
     </div>
 </div>

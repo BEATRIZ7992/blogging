@@ -1,6 +1,6 @@
 import { Post } from "../services/informacion.service";
 
-export const POST: Post[] = [ //porque se pone array vacio
+export const POST: Post[] = [
     {
         id: 1,
         titulo: 'Pan integral Casero',

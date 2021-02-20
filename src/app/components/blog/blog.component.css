@@ -1,6 +1,9 @@
 .container{
     margin-top: 30px;
     display: grid;
+  
+    width: 300px;
+    color: rgb(66, 62, 62);
     
 }
 .blog img{

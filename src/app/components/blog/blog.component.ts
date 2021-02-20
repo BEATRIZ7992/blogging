@@ -9,7 +9,8 @@ import { InformacionService, Post } from 'src/app/services/informacion.service';
 export class BlogComponent implements OnInit {
 
   ponerPost: Post[];
-  ponerCategorias: string[];
+  listaCategory: string[];
+
 
 
   constructor(private informacionService: InformacionService) {
@@ -20,9 +21,22 @@ export class BlogComponent implements OnInit {
 
     this.ponerPost = await this.informacionService.getAllPost()
 
-    /*  this.ponerCategorias = await this.informacionService.getPostByCategory() */
+    this.listaCategory = await this.informacionService.getCategory()
 
   }
 
+  async onChange($event) {
+    try {
+      if ($event.target.value === 'todos') {
+        this.ponerPost = await this.informacionService.getAllPost()
+      } else {
+        this.ponerPost = await this.informacionService.getPostByCategory($event.target.value)
+      }
+    } catch (error) {
+      console.log(error);
+
+    }
+
+  }
 
 }
