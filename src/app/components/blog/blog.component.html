@@ -1,6 +1,6 @@
-<select (change)="onChange($event)">
+<select class="form-select" aria-label="Default select example" (change)="onChange($event)">
     <option value="">Ver Todos</option>
-    <option value="categoria" *ngFor="let categoria of ponerPost">{{categoria}}</option>
+    <option [value]="categoria" *ngFor="let categoria of listaCategory">{{categoria}}</option>
 
 </select>
 
@@ -9,15 +9,12 @@
 
         <h2>{{pos.titulo}}</h2>
         <p>{{pos.texto}}</p>
-        <p>{{pos.autor}}</p>
+        <p>Autor/a: {{pos.autor}}</p>
 
         <img [src]="pos.imagen" alt="">
-        <p>{{pos.categoria}}</p>
+        <h5>{{pos.categoria}}</h5>
 
         <hr>
 
     </div>
 </div>
-
-
-<!-- como importo desde la db??¿?¿?¿?¿ -->

@@ -1,14 +1,22 @@
 .nav-bar{
     width: auto;
     border: solid grey 0.5px;
-    color: black;
-    text-decoration-color: none;
+
+  
+ 
     
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: rgb(59, 58, 58);
+    cursor: pointer;
+
 }
 
 h1{
     margin-left: 36%;
     margin-top: 5%;
     font-size: 50px;
-    color: grey;
+    color: rgb(80, 79, 79);
 }

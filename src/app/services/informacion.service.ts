@@ -49,8 +49,10 @@ export class InformacionService {
         if (pos.categoria === pCategoria) {
           arraFiltrado.push(pos)
         }
+
       }
       resolve(arraFiltrado)
+      console.log(arraFiltrado)
     })
   }
 
