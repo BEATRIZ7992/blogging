@@ -39,7 +39,7 @@ export class InformacionService {
   getAllPost(): Promise<Post[]> {
     return new Promise((resolve, reject) => {
       resolve(this.arraPost);
-      /* localStorage.setItem('arr_Post', JSON.stringify(this.arraPost)) */
+      localStorage.setItem('arr_Post', JSON.stringify(this.arraPost))
 
     })
   }

@@ -1,21 +1,21 @@
 <select class="form-select" aria-label="Default select example" (change)="onChange($event)">
-    <option value="">Ver Todos</option>
+    <option value="todos">Ver todos</option>
     <option [value]="categoria" *ngFor="let categoria of listaCategory">{{categoria}}</option>
 
 </select>
 
 <div class="container">
     <div class="blog" *ngFor="let pos of ponerPost">
-        <div class="blogger">
-            <h2>{{pos.titulo}}</h2>
-            <p>{{pos.texto}}</p>
-            <p>Autor/a: {{pos.autor}}</p>
 
-            <img [src]="pos.imagen" alt="">
-            <h6>{{pos.categoria}}</h6>
-            <h6>{{pos.fecha}}</h6>
+        <h2>{{pos.titulo}}</h2>
+        <p>{{pos.texto}}</p>
+        <p>Autor/a: {{pos.autor}}</p>
 
-        </div>
+        <img [src]="pos.imagen" alt="">
+        <h6>{{pos.categoria}}</h6>
+        <h6>{{pos.fecha|date:'dd/MM/yyyy'}}</h6>
+
+
 
     </div>
 </div>

@@ -2,27 +2,30 @@
 .container{
   
     display: grid;
-    width: 300px;
-    height: 300px;
+    
     color: rgb(21, 58, 82);
     padding: 20px;
+    font-weight: lighter;
     font-family:unset;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    
- 
-    
+    grid-template-rows: 1fr 1fr 1fr ;
+
     
 }
-.blogger{
-  display: grid;
-
+    .blog{
   border: solid 0.5px;
   padding: 20px;
   margin: 10px;
+  font-weight: lighter;
+  font-family:unset;
+  margin-left: 20px;
+    }
 
-}
+
+
+
 .blog img{
+  display: grid;
     height: 200px;
     width: 300px;
     padding: 30px;

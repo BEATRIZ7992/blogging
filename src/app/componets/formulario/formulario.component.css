@@ -3,12 +3,29 @@
   margin-left: 40%;
   margin-top: 5%;
   margin-bottom: 20%;
-  background-color: rgb(166, 170, 172);
-  height: 490px;
-  width: 340px;
-  padding: 30px;
+  background-color: rgb(86, 143, 172);
+  height: 600px;
+  width: 450px;
+  padding: 20px;
   border-radius: 20px;
 color: rgb(255, 255, 255);
+font-family: unset;
+font-weight:lighter;
+}
+.form-group{
+ display: grid;
+
+
+}
+.form-group input{
+  text-align: justify;
+  width: 400px;
+
+}
+.form-group p{
+  text-align: justify;
+  width: 100px;
+
 }
 
 
@@ -24,6 +41,7 @@ color: rgb(255, 255, 255);
 
 .form-select{
   width: 200px;
+ 
 }
 select {
   display: block;
