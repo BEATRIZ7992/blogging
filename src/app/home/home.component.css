@@ -1,0 +1,43 @@
+
+
+
+.container{
+   display: grid;
+   grid-row-start: 0;
+   grid-row-end:-1;
+   grid-column-start: 0;
+   grid-column-end: -1;
+   margin-left:30px ;
+   justify-content: center;
+  
+}
+
+.imagen{
+
+ 
+    
+    background-image: url("images/pan-de-jengibre-y-miel-1.jpg");
+    height: 500px;
+    width: 100%;
+   
+    opacity: 0.5;
+    background-size:cover;
+    z-index:  -1;
+    position:absolute;
+   
+   
+
+}
+
+h1{
+    margin-left: 36%;
+    margin-top: 5%;
+    font-size: 50px;
+    color:rgb(61, 60, 60);
+    font-family:sans-serif;
+    font-weight: lighter;
+ display:flex;
+ justify-content: center;
+ 
+  
+}

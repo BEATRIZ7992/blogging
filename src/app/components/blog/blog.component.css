@@ -3,8 +3,9 @@
     display: grid;
   
     width: 300px;
-    color: rgb(66, 62, 62);
+    color: rgb(21, 58, 82);
     padding: 20px;
+    font-family:unset;
     
 }
 .blog img{
@@ -39,6 +40,11 @@ select {
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
+  }
+
+  h6{
+    font-weight: bold;
+
   }
 
 

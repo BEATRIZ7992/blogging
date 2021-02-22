@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
 
 import { FormularioComponent } from './componets/formulario/formulario.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { FormularioComponent } from './componets/formulario/formulario.component
     BlogComponent,
 
     FormularioComponent,
+
+    HomeComponent,
 
   ],
   imports: [
