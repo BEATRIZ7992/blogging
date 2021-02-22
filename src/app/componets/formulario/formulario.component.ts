@@ -27,6 +27,9 @@ export class FormularioComponent implements OnInit {
       ]),
       categoria: new FormControl('', [
         Validators.required
+      ]),
+      fecha: new FormControl('', [
+        Validators.required
       ])
       /* categoria: new FormControl() */
 
@@ -39,8 +42,11 @@ export class FormularioComponent implements OnInit {
   }
 
   async onSUbmit() {
+
     const NuevoArr = await this.informacionService.addNewwPost(this.formulario.value)
     console.log(NuevoArr);
+
+
     this.formulario.reset();
   }
 

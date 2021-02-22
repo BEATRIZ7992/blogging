@@ -1,12 +1,26 @@
+
 .container{
-    margin-top: 30px;
-    display: grid;
   
+    display: grid;
     width: 300px;
+    height: 300px;
     color: rgb(21, 58, 82);
     padding: 20px;
     font-family:unset;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     
+ 
+    
+    
+}
+.blogger{
+  display: grid;
+
+  border: solid 0.5px;
+  padding: 20px;
+  margin: 10px;
+
 }
 .blog img{
     height: 200px;

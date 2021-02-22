@@ -13,16 +13,20 @@
     <div class="form-group">
         <img src="" alt="">Picture<input formControlName="imagen">
     </div>
-    <div class="form-select" formControlName="categoria">
-        <select name="" id="">
-            <option value="comidaarabe">Arabian Food</option>
-            <option value="comidaindia">Indian Food</option>
-            <option value="comidamediterranea">Mediterranean Food</option>
-            <option value="comidaasiatica">Asian Food</option>
-            <option value="panyderivados">Bread and derivates</option>
-            <option value="otros">Otros</option>
+    <div class="form-select">
+        <select name="Categoria" id="" formControlName="categoria">
+            <option value="Arabian Food">Arabian Food</option>
+            <option value="Indian Food">Indian Food</option>
+            <option value="Mediterranean Food">Mediterranean Food</option>
+            <option value="Asian Food">Asian Food</option>
+            <option value="Bread and derivates">Bread and derivates</option>
+            <option value="Other">Otros</option>
         </select>
     </div>
+    <div class="form-group">
+        <input type="date" formControlName="fecha">
+    </div>
+
 
 
     <button class="btn btn-block btn-info">Submit</button>

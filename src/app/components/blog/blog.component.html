@@ -6,15 +6,16 @@
 
 <div class="container">
     <div class="blog" *ngFor="let pos of ponerPost">
+        <div class="blogger">
+            <h2>{{pos.titulo}}</h2>
+            <p>{{pos.texto}}</p>
+            <p>Autor/a: {{pos.autor}}</p>
 
-        <h2>{{pos.titulo}}</h2>
-        <p>{{pos.texto}}</p>
-        <p>Autor/a: {{pos.autor}}</p>
+            <img [src]="pos.imagen" alt="">
+            <h6>{{pos.categoria}}</h6>
+            <h6>{{pos.fecha}}</h6>
 
-        <img [src]="pos.imagen" alt="">
-        <h6>{{pos.categoria}}</h6>
-
-        <hr>
+        </div>
 
     </div>
 </div>

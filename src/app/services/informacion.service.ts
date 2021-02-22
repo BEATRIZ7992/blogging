@@ -22,7 +22,10 @@ export class InformacionService {
 
   constructor() {
     this.arraPost = POST
+
   }
+
+
 
   addNewwPost(nuevoPost: Post) {
     return new Promise((resolve, reject) => {
@@ -35,7 +38,9 @@ export class InformacionService {
 
   getAllPost(): Promise<Post[]> {
     return new Promise((resolve, reject) => {
-      resolve(this.arraPost)
+      resolve(this.arraPost);
+      /* localStorage.setItem('arr_Post', JSON.stringify(this.arraPost)) */
+
     })
   }
 
