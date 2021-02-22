@@ -14,18 +14,24 @@ export class FormularioComponent implements OnInit {
   constructor(private informacionService: InformacionService) {
     this.formulario = new FormGroup({
       titulo: new FormControl('', [
+        Validators.minLength(4),
+
         Validators.required
       ]),
       texto: new FormControl('', [
+        Validators.minLength(4),
         Validators.required
       ]),
       autor: new FormControl('', [
+
         Validators.required
       ]),
       imagen: new FormControl('', [
+
         Validators.required
       ]),
       categoria: new FormControl('', [
+
         Validators.required
       ]),
       fecha: new FormControl('', [

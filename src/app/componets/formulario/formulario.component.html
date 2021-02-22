@@ -3,15 +3,25 @@
     <h2>NEW POST</h2>
     <div class="form-group">
         <p type="Name:">Title<input formControlName="titulo"></p>
+        <p class="error" *ngIf="formulario.get('titulo').hasError('minlength')&&formulario.get('titulo').touched">*El
+            campo debe contener al menos 4 palabras</p>
     </div>
     <div class="form-group">
         <p type="Text">Texto<input formControlName="texto"></p>
+        <p class="error" *ngIf="formulario.get('texto').hasError('minlength')&&formulario.get('texto').touched">*al
+            menos cuatro palabras
+        </p>
+
     </div>
     <div class="form-group">
         <p type="Author">Author<input formControlName="autor"></p>
+        <p class="error" *ngIf="formulario.get('autor').hasError('required')&& formulario.get('autor').touched">*El
+            campo autor es requerido</p>
     </div>
     <div class="form-group">
         <img src="" alt="">Picture<input formControlName="imagen">
+        <p class="error" *ngIf="formulario.get('imagen').hasError('required')&& formulario.get('imagen').touched">*debe
+            ser una foto</p>
     </div>
     <div class="form-select">
         <select name="Categoria" id="" formControlName="categoria">
@@ -29,6 +39,6 @@
 
 
 
-    <button class="btn btn-block btn-info">Submit</button>
+    <button class="btn btn-block btn-info" [disabled]="!formulario.valid">Submit</button>
 
 </form>
