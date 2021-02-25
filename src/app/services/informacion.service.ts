@@ -21,7 +21,16 @@ export class InformacionService {
 
 
   constructor() {
-    this.arraPost = POST
+
+    if (localStorage.getItem('arr_post')) {
+      const strArr = localStorage.getItem('arr_post');
+      this.arraPost = JSON.parse(strArr);
+    } else {
+      this.arraPost = POST
+
+    }
+
+
 
   }
 
@@ -31,15 +40,19 @@ export class InformacionService {
     return new Promise((resolve, reject) => {
       this.arraPost.push(nuevoPost);
       resolve(this.arraPost);
-      localStorage.setItem('arr_Post', JSON.stringify(this.arraPost))
+      const arrTostring = JSON.stringify(this.arraPost)
+      localStorage.setItem('arr_post', arrTostring)
+
     })
 
+
   }
+
 
   getAllPost(): Promise<Post[]> {
     return new Promise((resolve, reject) => {
       resolve(this.arraPost);
-      localStorage.setItem('arr_Post', JSON.stringify(this.arraPost))
+
 
     })
   }

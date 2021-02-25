@@ -13,18 +13,22 @@
 
 .imagen{
 
- 
     
+   display: block;
+   display: grid;
     background-image: url("images/pan-de-jengibre-y-miel-1.jpg");
+    size: cover;
+    
     height: 500px;
     width: 100%;
    padding: 20px;
     opacity: 0.5;
-    background-size:cover;
+   
     z-index: -1;
     margin-right: 20px;
     
     position:absolute;
+
    
    
 

@@ -12,15 +12,23 @@
 
     
 }
-    .blog{
+    .blog:hover{
   border: solid 0.5px;
   padding: 20px;
-  margin: 10px;
+  margin: 20px;
   font-weight: lighter;
   font-family:unset;
-  margin-left: 20px;
+  margin-right: 0.5px;
+  
+ 
+  
+ 
+
     }
 
+   
+   
+    
 
 
 
@@ -63,5 +71,6 @@ select {
     font-weight: bold;
 
   }
+  
 
 
